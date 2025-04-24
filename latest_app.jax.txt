@@ -1,0 +1,38 @@
+import React,{useState} from 'react'
+
+const App = () => {
+  const [num,setNum] = useState(0);
+  const [username,setusername] = useState('');
+  const submitHandler = (e) =>{
+    e.preventDefault();  //preventdefault se page reload nei hota hai..
+    setNum(num+10);
+    console.log("Submitted clicked",num);
+  }
+  const resetting = (e)=>{
+    reset('');
+  }
+  return (
+    <div>
+      <form onSubmit = {(e)=>{
+        submitHandler(e)
+      }} className="px-4 py-3 text-2xl m-5">
+        <input
+        value = {username}
+        onChange = {(e)=>{
+          setusername(e.target.value)
+        }
+        }
+          type="text"
+          placeholder="Enter text"
+          className="w-full px-2 py-1 border rounded"
+          
+        />
+        <button className="px-4 py-3 text-xl font-semibold m-5 bg-emerald-200 rounded-b-2xl">
+          Enter
+        </button>
+      </form>
+    </div>
+  );
+}
+
+export default App
