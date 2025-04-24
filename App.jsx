@@ -1,11 +1,10 @@
 import React from 'react'
-import Child1 from './components/Child/Child1'
-import Child2 from './components/Child/Child2'
+import Header1 from './components/Headers'
 const App = () => {
   return (
     <div>
-      <Child1 name="Russsel"/>
-      <Child2 name="De"/>
+      <Header1 />
+      This is App;
     </div>
   )
 }

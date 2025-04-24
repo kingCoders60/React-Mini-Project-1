@@ -40,3 +40,86 @@
 .read-the-docs {
   color: #888;
 }
+.h1 {
+  font-size: 2.5rem;
+  /* Large and bold heading */
+  font-family: 'Arial', sans-serif;
+  /* Modern and clean font */
+  font-weight: bold;
+  /* Emphasize the text */
+  color: #1a202c;
+  /* Deep navy for sophistication */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  /* Subtle shadow for depth */
+  text-transform: uppercase;
+  /* Make it bold and impactful */
+  letter-spacing: 2px;
+  /* Add some spacing between letters */
+  background: linear-gradient(90deg, #ffffff, #3eab0b);
+  /* Beautiful gradient */
+  -webkit-background-clip: text;
+  /* Clip background to text */
+  -webkit-text-fill-color: transparent;
+  /* Text filled with gradient */
+  padding: 10px 20px;
+  /* Add spacing around the text */
+  border-radius: 10px;
+  /* Slightly rounded corners */
+  animation: glow 5s infinite alternate;
+  /* Add a glowing animation */
+}
+
+/* Add animation for extra flair */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #36eb16, 0 0 10px #549e6b;
+  }
+
+    50% {
+      text-shadow: 0 0 20px #de05ff, 0 0 30px #59ff0b;
+    }
+
+  100% {
+    text-shadow: 0 0 20px #f40202, 0 0 30px #ff0a0a;
+  }
+}
+.h2 {
+  font-size: 2rem;
+  /* Perfect size for subheadings */
+  font-family: 'Verdana', sans-serif;
+  /* Sleek and professional font */
+  font-weight: bold;
+  /* Emphasis on the heading */
+  text-align: center;
+  /* Center alignment for better focus */
+  color: #ffffff;
+  /* Base color */
+  background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(0, 255, 0, 1) 50%, rgba(0, 0, 255, 1) 100%);
+  background-clip: text;
+  /* Clip gradient to text */
+  -webkit-background-clip: text;
+  /* Webkit fallback */
+  -webkit-text-fill-color: transparent;
+  /* Ensure gradient shows through */
+  animation: gradientShift 3s ease infinite;
+  /* Smooth gradient transition */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  /* Subtle underline */
+  padding-bottom: 5px;
+  /* Spacing below text */
+}
+
+/* Gradient animation for a dynamic effect */
+@keyframes gradientShift {
+  0% {
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(0, 255, 0, 1) 50%, rgba(0, 0, 255, 1) 100%);
+  }
+
+  50% {
+    background: linear-gradient(90deg, rgba(0, 255, 0, 1) 0%, rgba(0, 0, 255, 1) 50%, rgba(255, 0, 0, 1) 100%);
+  }
+
+  100% {
+    background: linear-gradient(90deg, rgba(0, 0, 255, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(0, 255, 0, 1) 100%);
+  }
+}
