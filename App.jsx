@@ -1,10 +1,11 @@
 import React from 'react'
-import Ex from './components/Ex'
-
+import Child1 from './components/Child/Child1'
+import Child2 from './components/Child/Child2'
 const App = () => {
   return (
     <div>
-      <Ex/>
+      <Child1 name="Russsel"/>
+      <Child2 name="De"/>
     </div>
   )
 }
